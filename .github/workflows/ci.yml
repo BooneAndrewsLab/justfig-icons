@@ -1,0 +1,31 @@
+name: CI
+
+# Every push and pull request: the unit checks, then a full build from the
+# pinned sources and the release validation (a contribution PR must pass it).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run fetch
+      - run: npm run build
+      - run: npm run validate
+      - name: Report is up to date
+        run: git diff --exit-code REPORT.md
