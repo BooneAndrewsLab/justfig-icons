@@ -2,7 +2,7 @@
  * Thumbnails (plan §3): every icon rendered with resvg into sprite sheets
  * per category, THUMB_PER_SHEET icons each, at 96 px cells and 2× (192 px),
  * encoded as WebP with sharp. Icons are centred in their cell with a small
- * margin, on transparency.
+ * margin, on transparency. A sheet is always THUMB_COLUMNS cells wide.
  */
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -48,7 +48,8 @@ export async function writeSprites(
     for (const scale of [1, 2]) {
       const cell = THUMB_SIZE * scale;
       const rows = Math.ceil(batch.length / THUMB_COLUMNS);
-      const cols = Math.min(THUMB_COLUMNS, batch.length);
+      // Always the full width, so the app can size any sheet from the manifest alone.
+      const cols = THUMB_COLUMNS;
       const tiles = await Promise.all(batch.map((icon) => renderCell(icon, cell)));
       const img = await sharp({
         create: {
