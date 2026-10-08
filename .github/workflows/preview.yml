@@ -1,0 +1,64 @@
+name: House icon preview
+
+# For a pull request that touches house/: validate the house icons, render the
+# new or changed ones recoloured with 3 random palettes, upload the page as an
+# artifact and summarise it on the run page. Plain `pull_request` on purpose:
+# a fork's PR gets a read-only token and no secrets, and this workflow only
+# needs to read. It needs no network beyond installing npm packages.
+
+on:
+  pull_request:
+    paths:
+      - 'house/**'
+      - 'taxonomy.yaml'
+      - 'licenses.yaml'
+      - 'src/**'
+      - 'scripts/**'
+      - '.github/workflows/preview.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BASE_REF: ${{ github.base_ref }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # The preview diffs against the PR's base branch.
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Validate the house icons
+        run: npm run validate:house
+      - name: Build the preview
+        id: preview
+        run: >
+          npm run preview --
+          --base "origin/$BASE_REF"
+          --where "Download the **house-icon-preview** artifact from this run's page (bottom of the Summary tab), unzip it and open index.html."
+      - name: Summary
+        if: always()
+        run: |
+          if [ -f preview/summary.md ]; then
+            cat preview/summary.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "The preview was not built; see the log of the failed step." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: house-icon-preview
+          path: preview/
+          if-no-files-found: ignore
+          retention-days: 14

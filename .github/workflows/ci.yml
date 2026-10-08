@@ -28,4 +28,8 @@ jobs:
       - run: npm run build
       - run: npm run validate
       - name: Report is up to date
-        run: git diff --exit-code REPORT.md
+        run: |
+          git diff --exit-code REPORT.md || {
+            echo "::error file=REPORT.md::REPORT.md is out of date. Run 'npm run fetch && npm run build' and commit REPORT.md (see CONTRIBUTING.md)."
+            exit 1
+          }

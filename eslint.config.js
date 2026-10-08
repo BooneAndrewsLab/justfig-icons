@@ -6,7 +6,19 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig(
-  { ignores: ['dist', 'raw', 'release', 'coverage', 'node_modules', '.idea', '.claude'] },
+  {
+    ignores: [
+      'dist',
+      'preview',
+      '.house-dist',
+      'raw',
+      'release',
+      'coverage',
+      'node_modules',
+      '.idea',
+      '.claude',
+    ],
+  },
   js.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
