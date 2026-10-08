@@ -44,7 +44,7 @@ Slot defaults come from Okabe-Ito and their tints, so the defaults are colourbli
 
 ## Gate
 
-A contribution must pass `npm run build && npm run validate`.
-
-<!-- Planned (plan §3): a CI preview page rendering each new icon recoloured with 3 random
-palettes. Not built yet. -->
+A contribution must pass `npm run validate:house` (and, in CI, the full `npm run build &&
+npm run validate`). `npm run preview` renders each new or changed icon at its default colours
+and recoloured with 3 random palettes, and CI uploads that page for every pull request; see
+[CONTRIBUTING.md](../CONTRIBUTING.md).

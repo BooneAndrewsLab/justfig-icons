@@ -17,6 +17,8 @@ npm ci
 npm run fetch      # git sources at their pinned commits → raw/ (gitignored)
 npm run build      # raw/ + house/ → dist/, and REPORT.md
 npm run validate   # checks dist/ the way the app reads it; exits 1 on any error
+npm run validate:house   # house icons only: build + validate, offline, no fetch needed
+npm run preview -- --ids a,b   # PNG/HTML preview of house icons (--base <ref> or --all too)
 npm run pack       # dist/ → release/justfig-icons-<version>.tar.gz (+ .sha256)
 npm run check      # typecheck, lint, format, unit tests
 ```
