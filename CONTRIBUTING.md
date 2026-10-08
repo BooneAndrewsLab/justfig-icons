@@ -127,9 +127,13 @@ npm run validate
 git diff REPORT.md
 ```
 
-`npm run validate` must end with `0 licence errors; 0 other errors`. The diff of `REPORT.md`
-should only show the icon totals and the House icons line going up by the icons you added.
-If it shows more, the sources have moved on; start from an up-to-date `main`.
+`npm run build` takes a minute or two and ends with the number of icons built (the 732
+rejected or skipped are third-party icons and unchanged). `npm run validate` must end with
+`0 licence errors; 0 other errors`. The diff of `REPORT.md` should only be a few counts going
+up by the number of icons you added: the icon total, the by-slot recolour count, the House
+icons row and your category's row (for `test-flask`: 2,891 to 2,892, 39 to 40, and Lab
+equipment 204 to 205). If it shows more, the sources have moved on; start from an up-to-date
+`main`.
 
 If you cannot run the full build, open the PR anyway and say so: the `CI` check will point at
 `REPORT.md` and a maintainer can regenerate it.
