@@ -52,18 +52,21 @@ Edit > XML Editor), or write the SVG by hand. A minimal valid icon, saved as
 
 ### 3. Describe it
 
-Add an entry at the **end** of `house/meta.yaml` (under `icons:`, indented two spaces, with the
-same layout as the entries above it):
+Append an entry to the **end** of `house/meta.yaml`. It sits under the `icons:` key at the top
+of the file, so it is indented two spaces, like the entries above it. Add these lines (the
+first two are context, do not repeat them):
 
 ```yaml
-test-flask:
-  title: 'Test flask'
-  tags: ['flask', 'glass', 'conical']
-  category: lab
-  slots:
-    - { id: s1, label: 'Liquid', default: '#56b4e9' }
-    - { id: s2, label: 'Vessel', default: '#e4f1fb' }
-    - { id: outline, label: 'Outline', default: '#1f2933' }
+icons:
+  # ...the existing entries...
+  test-flask:
+    title: 'Test flask'
+    tags: ['flask', 'glass', 'conical']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#56b4e9' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
 ```
 
 - `title`: what the user sees. `tags`: at least 3 search words. `category`: one of the ids in
@@ -82,14 +85,16 @@ npm run preview -- --ids test-flask
 ```
 
 `validate:house` builds only the house icons into `.house-dist/` and validates them, the same
-checks as `npm run validate`, in a second, offline. **Success** ends with a line like
+checks as `npm run validate`, in a second, offline. It also fails when an SVG has no
+`meta.yaml` entry or the reverse. **Success** prints `built 40 icons in ...` and ends with a
+line like
 
 ```
 40 icons; 0 licence errors; 0 other errors; first payload 3 kB; slowest search 2.8 ms
 ```
 
-and exit status 0. Anything else prints `licence:` or `error:` lines naming the icon and the
-problem; fix those and rerun.
+and exit status 0 (the count is the number of house icons, yours included). Anything else
+prints `licence:` or `error:` lines naming the icon and the problem; fix those and rerun.
 
 `preview` renders your icon through the same normaliser as the build and writes
 `preview/index.html`. **Success** is

@@ -12,7 +12,7 @@
     "fetch": "node scripts/fetch.ts",
     "build": "node scripts/build.ts",
     "validate": "node scripts/validate.ts",
-    "validate:house": "node scripts/build.ts --only house --no-thumbs --out .house-dist && node scripts/validate.ts .house-dist",
+    "validate:house": "node scripts/build.ts --only house --no-thumbs --strict --out .house-dist && node scripts/validate.ts .house-dist",
     "preview": "node scripts/preview.ts",
     "pack": "node scripts/pack.ts",
     "typecheck": "tsc --noEmit",
