@@ -1,0 +1,306 @@
+# House icons: drawn to house/STYLE.md. Every icon needs a title, at least 3 tags,
+# a taxonomy category and its slots; author and license default to the values
+# below and may be set per icon (license: CC0-1.0 or CC-BY-4.0 only).
+author: JustFig contributors
+license: CC0-1.0
+icons:
+  test-tube:
+    title: 'Test tube'
+    tags: ['tube', 'glass', 'sample']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#56b4e9' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  microcentrifuge-tube:
+    title: 'Microcentrifuge tube'
+    tags: ['eppendorf', 'tube', '1.5 ml']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#56b4e9' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  conical-tube:
+    title: 'Conical tube (15/50 ml)'
+    tags: ['falcon', 'tube', 'centrifuge']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#56b4e9' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: s3, label: 'Cap', default: '#0072b2' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  erlenmeyer-flask:
+    title: 'Erlenmeyer flask'
+    tags: ['flask', 'conical', 'culture']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#009e73' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  beaker:
+    title: 'Beaker'
+    tags: ['glass', 'liquid', 'buffer']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#56b4e9' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  petri-dish:
+    title: 'Petri dish'
+    tags: ['agar', 'plate', 'colonies', 'culture']
+    category: lab
+    slots:
+      - { id: s1, label: 'Agar', default: '#f5e6a8' }
+      - { id: s2, label: 'Colonies', default: '#e69f00' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  pipette:
+    title: 'Pipette'
+    tags: ['micropipette', 'pipetting', 'gilson']
+    category: lab
+    slots:
+      - { id: s1, label: 'Body', default: '#56b4e9' }
+      - { id: s2, label: 'Tip', default: '#f2f4f6' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  pipette-tip:
+    title: 'Pipette tip'
+    tags: ['tip', 'pipetting', 'consumable']
+    category: lab
+    slots:
+      - { id: s1, label: 'Tip', default: '#f0e442' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  culture-flask:
+    title: 'Cell culture flask'
+    tags: ['t75', 'flask', 'culture', 'cells']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#cc79a7' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: s3, label: 'Cap', default: '#0072b2' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  media-bottle:
+    title: 'Media bottle'
+    tags: ['bottle', 'medium', 'reagent']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#cc79a7' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: s3, label: 'Cap', default: '#0072b2' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  microscope-slide:
+    title: 'Microscope slide'
+    tags: ['slide', 'coverslip', 'specimen']
+    category: lab
+    slots:
+      - { id: s1, label: 'Specimen', default: '#cc79a7' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  cuvette:
+    title: 'Cuvette'
+    tags: ['spectrophotometer', 'absorbance', 'od600']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#f0e442' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  well-plate:
+    title: 'Multi-well plate'
+    tags: ['96-well', 'plate', 'assay', 'microplate']
+    category: lab
+    slots:
+      - { id: s1, label: 'Wells', default: '#56b4e9' }
+      - { id: s2, label: 'Plate', default: '#e4e7eb' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  cryovial:
+    title: 'Cryovial'
+    tags: ['vial', 'freezer', 'liquid nitrogen', 'storage']
+    category: lab
+    slots:
+      - { id: s1, label: 'Liquid', default: '#56b4e9' }
+      - { id: s2, label: 'Vessel', default: '#e4f1fb' }
+      - { id: s3, label: 'Cap', default: '#d55e00' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  animal-cell:
+    title: 'Animal cell'
+    tags: ['cell', 'eukaryote', 'nucleus', 'mammalian']
+    category: cells
+    slots:
+      - { id: s1, label: 'Cytoplasm', default: '#fbd3c0' }
+      - { id: s2, label: 'Nucleus', default: '#8e6fb4' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  bacterium-rod:
+    title: 'Bacterium (rod)'
+    tags: ['bacillus', 'e. coli', 'prokaryote', 'microbe']
+    category: microbes
+    slots:
+      - { id: s1, label: 'Cell', default: '#009e73' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  bacterium-coccus:
+    title: 'Bacteria (cocci)'
+    tags: ['coccus', 'staphylococcus', 'prokaryote', 'microbe']
+    category: microbes
+    slots:
+      - { id: s1, label: 'Cells', default: '#cc79a7' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  yeast:
+    title: 'Yeast (budding)'
+    tags: ['saccharomyces', 'fungus', 'budding', 'cerevisiae']
+    category: microbes
+    slots:
+      - { id: s1, label: 'Cell', default: '#f3d58a' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  neuron:
+    title: 'Neuron'
+    tags: ['nerve', 'axon', 'dendrite', 'brain']
+    category: cells
+    slots:
+      - { id: s1, label: 'Soma', default: '#f6a6b2' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  red-blood-cell:
+    title: 'Red blood cell'
+    tags: ['erythrocyte', 'rbc', 'blood']
+    category: immunology
+    slots:
+      - { id: s1, label: 'Cell', default: '#d64545' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  mitochondrion:
+    title: 'Mitochondrion'
+    tags: ['mitochondria', 'organelle', 'atp', 'cristae']
+    category: organelles
+    slots:
+      - { id: s1, label: 'Outer membrane', default: '#e69f00' }
+      - { id: s2, label: 'Matrix', default: '#fbe3b5' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  nucleus:
+    title: 'Nucleus'
+    tags: ['organelle', 'chromatin', 'nucleolus', 'dna']
+    category: organelles
+    slots:
+      - { id: s1, label: 'Nucleus', default: '#8e6fb4' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  vesicle:
+    title: 'Vesicle'
+    tags: ['exosome', 'liposome', 'organelle', 'transport']
+    category: organelles
+    slots:
+      - { id: s1, label: 'Lumen', default: '#d9f0e8' }
+      - { id: s2, label: 'Membrane', default: '#009e73' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  golgi:
+    title: 'Golgi apparatus'
+    tags: ['organelle', 'cisternae', 'secretion']
+    category: organelles
+    slots:
+      - { id: s1, label: 'Cisternae', default: '#e0a3d0' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  protein:
+    title: 'Protein (globular)'
+    tags: ['protein', 'enzyme', 'molecule']
+    category: proteins
+    slots:
+      - { id: s1, label: 'Protein', default: '#0072b2' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  antibody:
+    title: 'Antibody (IgG)'
+    tags: ['igg', 'immunoglobulin', 'antibody', 'immunology']
+    category: immunology
+    slots:
+      - { id: s1, label: 'Heavy chain', default: '#0072b2' }
+      - { id: s2, label: 'Light chain', default: '#56b4e9' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  receptor:
+    title: 'Membrane receptor'
+    tags: ['receptor', 'gpcr', 'membrane', 'signalling']
+    category: organelles
+    slots:
+      - { id: s1, label: 'Receptor', default: '#009e73' }
+      - { id: s2, label: 'Membrane', default: '#f5e0b8' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  dna-helix:
+    title: 'DNA double helix'
+    tags: ['dna', 'helix', 'gene', 'nucleic acid']
+    category: nucleic
+    slots:
+      - { id: s1, label: 'Strand 1', default: '#0072b2' }
+      - { id: s2, label: 'Strand 2', default: '#e69f00' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  rna-strand:
+    title: 'RNA strand'
+    tags: ['rna', 'mrna', 'transcript', 'nucleic acid']
+    category: nucleic
+    slots:
+      - { id: s1, label: 'Strand', default: '#d55e00' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  lipid-bilayer:
+    title: 'Lipid bilayer'
+    tags: ['membrane', 'phospholipid', 'bilayer']
+    category: organelles
+    slots:
+      - { id: s1, label: 'Heads', default: '#e69f00' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  ligand:
+    title: 'Ligand'
+    tags: ['ligand', 'small molecule', 'drug', 'agonist']
+    category: proteins
+    slots:
+      - { id: s1, label: 'Ligand', default: '#d55e00' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  enzyme:
+    title: 'Enzyme'
+    tags: ['enzyme', 'catalysis', 'active site', 'protein']
+    category: proteins
+    slots:
+      - { id: s1, label: 'Enzyme', default: '#cc79a7' }
+      - { id: s2, label: 'Substrate', default: '#f0e442' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  mouse:
+    title: 'Mouse'
+    tags: ['mouse', 'rodent', 'mus musculus', 'animal model']
+    category: organisms
+    slots:
+      - { id: s1, label: 'Fur', default: '#c9ced6' }
+      - { id: s2, label: 'Ears', default: '#f4b6c2' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  zebrafish:
+    title: 'Zebrafish'
+    tags: ['fish', 'danio rerio', 'animal model']
+    category: organisms
+    slots:
+      - { id: s1, label: 'Body', default: '#f2d16b' }
+      - { id: s2, label: 'Stripes', default: '#0072b2' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  plant:
+    title: 'Plant (seedling)'
+    tags: ['arabidopsis', 'plant', 'seedling', 'leaf']
+    category: plants
+    slots:
+      - { id: s1, label: 'Leaves', default: '#009e73' }
+      - { id: s2, label: 'Pot', default: '#c97b4a' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  plus:
+    title: 'Plus'
+    tags: ['add', 'positive', 'treatment']
+    category: symbols
+    slots:
+      - { id: s1, label: 'Fill', default: '#009e73' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  cross:
+    title: 'Cross'
+    tags: ['no', 'knockout', 'blocked', 'times']
+    category: symbols
+    slots:
+      - { id: s1, label: 'Fill', default: '#d55e00' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  lightning:
+    title: 'Stimulus (lightning)'
+    tags: ['stimulus', 'activation', 'shock', 'energy']
+    category: symbols
+    slots:
+      - { id: s1, label: 'Fill', default: '#f0e442' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
+  clock:
+    title: 'Time (clock)'
+    tags: ['time', 'incubation', 'hours', 'timepoint']
+    category: symbols
+    slots:
+      - { id: s1, label: 'Face', default: '#f2f4f6' }
+      - { id: outline, label: 'Outline', default: '#1f2933' }
