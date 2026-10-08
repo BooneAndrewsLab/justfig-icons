@@ -1,0 +1,495 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`slot clusterer on 20 samples > 01-fish-1.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 14,
+    "s1": 3,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#acc7d5",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#d3e1e9",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 02-antibodies.svg 1`] = `
+{
+  "perSlot": {
+    "s1": 14,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#ffffff",
+      "id": "s1",
+      "label": "Colour",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 03-emptycell-1.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 4,
+    "s1": 1,
+    "s2": 1,
+    "s3": 1,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#da6199",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#fcd9db",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#f9a6ae",
+      "id": "s3",
+      "label": "Tertiary",
+    },
+    {
+      "default": "#ffffff",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 04-beaker-empty.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 13,
+    "s1": 9,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#79cde1",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#d9f1f7",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 05-igA-immunoglobulin.svg 1`] = `
+{
+  "perSlot": {
+    "all": 108,
+  },
+  "recolor": "whole",
+  "slots": [
+    {
+      "default": "#83b838",
+      "id": "all",
+      "label": "Colour",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 06-chromosome-gray.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 3,
+    "s1": 3,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#a9bdd6",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#ffffff",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 07-adipocyte-4.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 2,
+    "s1": 2,
+    "s2": 1,
+    "s3": 2,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#ffe800",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#fff9bd",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#f08d00",
+      "id": "s3",
+      "label": "Tertiary",
+    },
+    {
+      "default": "#333333",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 08-endoplasmatic-reticulum-medium.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 7,
+    "s1": 4,
+    "s2": 1,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#a82d4d",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#ce8390",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#f5e4e5",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 09-cuvette-lightpink.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 14,
+    "s1": 9,
+    "s2": 2,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#eee5fb",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#b6e1f6",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#ffffff",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 10-cell-culture-equipment-4.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 24,
+    "s1": 6,
+    "s2": 2,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#bedbe9",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#dab3c4",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#e2eff5",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 11-cells_side_view.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 19,
+    "s1": 1,
+    "s2": 2,
+    "s3": 9,
+    "s4": 9,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#b2d9ee",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#ef435d",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#1ca4c6",
+      "id": "s3",
+      "label": "Tertiary",
+    },
+    {
+      "default": "#1c75bc",
+      "id": "s4",
+      "label": "Quaternary",
+    },
+    {
+      "default": "#231f20",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 12-simple_cell1.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 2,
+    "s1": 1,
+    "s2": 2,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#785ef0",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#ffb000",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#000000",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 13-round-bottomed-flask-2-100ml.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 13,
+    "s1": 1,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#d9e2ff",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#9a9a9a",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 14-ribosome.svg 1`] = `
+{
+  "perSlot": {
+    "s1": 5,
+    "s2": 5,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#76b674",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#78abbf",
+      "id": "s2",
+      "label": "Secondary",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 15-ArabidopsisSeedlings.svg 1`] = `
+{
+  "perSlot": {
+    "neutral": 1,
+    "s1": 7,
+    "s2": 7,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#d0c396",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#87c041",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#fffefe",
+      "id": "neutral",
+      "label": "Neutral",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 16-chlamydomonas.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 11,
+    "s1": 1,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#ffa733",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#e5e5e5",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 17-immuneglobuline_igG_brown.svg 1`] = `
+{
+  "perSlot": {
+    "s1": 36,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#d35f5f",
+      "id": "s1",
+      "label": "Colour",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 18-Antibody_c1q.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 12,
+    "s1": 12,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#e2b8dc",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#000000",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 19-iPSCs.svg 1`] = `
+{
+  "perSlot": {
+    "s1": 32,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#d1d3d4",
+      "id": "s1",
+      "label": "Colour",
+    },
+  ],
+}
+`;
+
+exports[`slot clusterer on 20 samples > 20-Promoter_enhancer_loop.svg 1`] = `
+{
+  "perSlot": {
+    "outline": 7,
+    "s1": 1,
+    "s2": 13,
+  },
+  "recolor": "slots",
+  "slots": [
+    {
+      "default": "#26828e",
+      "id": "s1",
+      "label": "Primary",
+    },
+    {
+      "default": "#3e4a89",
+      "id": "s2",
+      "label": "Secondary",
+    },
+    {
+      "default": "#ffffff",
+      "id": "outline",
+      "label": "Outline",
+    },
+  ],
+}
+`;
