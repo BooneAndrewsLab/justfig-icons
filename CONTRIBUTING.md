@@ -17,7 +17,7 @@ You need git and Node.js 24 (the version in [.nvmrc](.nvmrc); with nvm, `nvm ins
 ```sh
 git clone https://github.com/<you>/justfig-icons.git
 cd justfig-icons
-git switch -c icon-test-flask
+git switch -c icon-<your-icon-id>
 npm ci
 ```
 
@@ -37,6 +37,9 @@ Follow [house/STYLE.md](house/STYLE.md). In short:
 - Colours come from the house palette: `#e69f00` `#56b4e9` `#009e73` `#f0e442` `#0072b2`
   `#d55e00` `#cc79a7`, glass `#e4f1fb`, outline `#1f2933`.
 - The id is kebab-case (`test-flask`), and the file is `house/svg/<id>.svg`.
+- Wrapping each part in `<g data-part="<name>">` (STYLE.md, Structure) is **recommended**, so
+  per-part recolouring stays meaningful, but not required: the minimal example below has one
+  part and passes.
 
 Draw in Inkscape or Figma and add the `data-slot` attributes in a text editor (Inkscape:
 Edit > XML Editor), or write the SVG by hand. A minimal valid icon, saved as
@@ -107,8 +110,9 @@ Open that file in a browser. You see the icon at its default colours and with th
 picked at random from the house palette (seeded from the id, so a rerun is identical), with
 its title, tags, category, slots, licence and author. Problems are shown in red at the top of
 the page and of the icon's card, and printed as `error:` lines. Check that the recoloured
-versions still read well, and that each slot changes the part you meant it to. `preview/`
-is git-ignored.
+versions still read well, and that each slot changes the part you meant it to. Without a
+browser, look at the PNGs directly: `preview/png/<id>-default.png`, `<id>-p1.png`, `<id>-p2.png`
+and `<id>-p3.png`. `preview/` is git-ignored.
 
 Without `--ids`, `npm run preview -- --base upstream/main` previews every house icon that is
 new or changed versus that git ref (default `origin/main`); `--all` previews all of them.
