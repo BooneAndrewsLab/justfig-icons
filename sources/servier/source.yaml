@@ -1,0 +1,24 @@
+# Servier Medical Art: CC BY 4.0, but DEFERRED (plan, "Licence check results").
+id: servier
+name: Servier Medical Art
+enabled: false
+homepage: https://smart.servier.com/
+license: CC-BY-4.0
+author: Servier
+# Required credit wording (smart.servier.com terms), plus a note of changes made.
+attribution: >-
+  Image(s) provided by Servier Medical Art (https://smart.servier.com), licensed
+  under CC BY 4.0
+fetch:
+  # The site's terms forbid automated downloading, and there is no SVG (PNG and
+  # PPTX only). The user downloads the PPTX slide sets by hand into
+  # raw/servier/pptx/; docs/servier-pptx-import.md describes the conversion.
+  method: manual
+  path: raw/servier/pptx
+originalUrl: https://smart.servier.com/
+termsChecked: 2026-10-08
+termsUrl: https://smart.servier.com/terms-and-conditions/
+notes: >-
+  About 1,400 Servier drawings already reach the library through Bioicons
+  (CC BY 3.0, vectorised there). The direct import adds the newer CC BY 4.0
+  sets once someone downloads them by hand.

@@ -1,0 +1,11 @@
+# SciDraw: cleared (CC BY 4.0 / CC0 per item, JSON API, ~614 vector SVGs) but
+# left out of v1 by decision (plan, "Decisions made 2026-10-08").
+id: scidraw
+name: SciDraw
+enabled: false
+homepage: https://scidraw.io/
+license: per-icon
+fetch:
+  method: none
+termsChecked: 2026-10-08
+notes: Candidate for a later release. Needs a fetcher for its JSON API and a per-item licence map.

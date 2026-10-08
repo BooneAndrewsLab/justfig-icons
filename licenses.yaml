@@ -1,0 +1,76 @@
+# Licence allow-list (plan §3). Every icon carries an SPDX id; an id not listed
+# here, or listed with allow: false, rejects the icon. Fields:
+#   name         how a credit line writes it
+#   url          the licence text
+#   allow        whether icons under it can ship
+#   shareAlike   CC BY-SA: hidden in the app unless the user opts in
+#   attribution  the author must be credited (CC BY, CC BY-SA)
+#   modifiedNote a recoloured icon's credit must say "modified" (CC BY, CC BY-SA)
+#   notice       the licence text and copyright line must travel with the icon
+#                (LICENSES/<id>.txt in the release)
+licenses:
+  CC0-1.0:
+    name: CC0 1.0
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+    allow: true
+  PDM-1.0:
+    name: Public Domain Mark 1.0
+    url: https://creativecommons.org/publicdomain/mark/1.0/
+    allow: true
+  MIT:
+    name: MIT
+    url: https://opensource.org/license/mit
+    allow: true
+    notice: true
+  BSD-2-Clause:
+    name: BSD 2-Clause
+    url: https://opensource.org/license/bsd-2-clause
+    allow: true
+    notice: true
+  BSD-3-Clause:
+    name: BSD 3-Clause
+    url: https://opensource.org/license/bsd-3-clause
+    allow: true
+    notice: true
+  Apache-2.0:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+    allow: true
+    notice: true
+  CC-BY-3.0:
+    name: CC BY 3.0
+    url: https://creativecommons.org/licenses/by/3.0/
+    allow: true
+    attribution: true
+    modifiedNote: true
+  CC-BY-4.0:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+    allow: true
+    attribution: true
+    modifiedNote: true
+  CC-BY-SA-3.0:
+    name: CC BY-SA 3.0
+    url: https://creativecommons.org/licenses/by-sa/3.0/
+    allow: true
+    attribution: true
+    modifiedNote: true
+    shareAlike: true
+  CC-BY-SA-4.0:
+    name: CC BY-SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    allow: true
+    attribution: true
+    modifiedNote: true
+    shareAlike: true
+  # Never: non-commercial or no-derivatives terms (recolouring is a derivative).
+  CC-BY-NC-3.0:
+    { name: CC BY-NC 3.0, url: https://creativecommons.org/licenses/by-nc/3.0/, allow: false }
+  CC-BY-NC-4.0:
+    { name: CC BY-NC 4.0, url: https://creativecommons.org/licenses/by-nc/4.0/, allow: false }
+  CC-BY-ND-4.0:
+    { name: CC BY-ND 4.0, url: https://creativecommons.org/licenses/by-nd/4.0/, allow: false }
+  CC-BY-NC-SA-4.0:
+    { name: CC BY-NC-SA 4.0, url: https://creativecommons.org/licenses/by-nc-sa/4.0/, allow: false }
+  CC-BY-NC-ND-4.0:
+    { name: CC BY-NC-ND 4.0, url: https://creativecommons.org/licenses/by-nc-nd/4.0/, allow: false }

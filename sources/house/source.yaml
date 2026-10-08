@@ -1,0 +1,13 @@
+# House icons: drawn for JustFig to house/STYLE.md, kept in this repository.
+id: house
+name: House icons
+enabled: true
+homepage: https://github.com/BooneAndrewsLab/justfig-icons
+license: CC0-1.0
+author: JustFig contributors
+fetch:
+  method: local
+  path: house
+originalUrl: https://github.com/BooneAndrewsLab/justfig-icons/blob/main/house/svg/{path}.svg
+termsChecked: 2026-10-08
+notes: Pre-slotted (data-slot / data-tone written by hand); the pipeline keeps the slots.

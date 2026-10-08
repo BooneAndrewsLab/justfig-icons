@@ -1,0 +1,20 @@
+# Health Icons: CC0 icons for public health (filled 48px set).
+id: healthicons
+name: Health Icons
+enabled: true
+homepage: https://healthicons.org/
+# Each icon's own licence; the repository's code is MIT, the icons CC0 (README).
+license: CC0-1.0
+author: Resolve to Save Lives
+fetch:
+  method: git
+  url: https://github.com/resolvetosavelives/healthicons.git
+  commit: 36887b268d2cb61f8d91622ad459bdf07910c2b0
+  paths: [public/icons/meta-data.json, public/icons/svg/filled, LICENSE, README.md]
+originalUrl: https://github.com/resolvetosavelives/healthicons/blob/{commit}/public/icons/svg/filled/{path}.svg
+termsChecked: 2026-10-08
+termsUrl: https://github.com/resolvetosavelives/healthicons#license
+notes: >-
+  README: "These icons are available in the public domain (CC0)". Single colour
+  (currentColor), drawn on a 48 px grid. The outline and 24 px variants are not
+  ingested: they are the same subjects redrawn.

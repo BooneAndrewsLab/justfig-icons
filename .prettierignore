@@ -1,0 +1,8 @@
+dist
+raw
+release
+coverage
+node_modules
+package-lock.json
+house/svg
+REPORT.md

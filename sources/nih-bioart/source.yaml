@@ -1,0 +1,11 @@
+# NIH BioArt: cleared (mostly public domain, some CC BY) but left out of v1 by
+# decision; there is no bulk access, so ingestion would be curated by hand.
+id: nih-bioart
+name: NIH BioArt
+enabled: false
+homepage: https://bioart.niaid.nih.gov/
+license: per-icon
+fetch:
+  method: none
+termsChecked: 2026-10-08
+notes: Candidate for a later release. SVG items only; rasters are skipped.

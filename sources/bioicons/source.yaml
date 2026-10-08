@@ -1,0 +1,31 @@
+# Bioicons: community scientific icons with a licence and author per icon.
+id: bioicons
+name: Bioicons
+enabled: true
+homepage: https://bioicons.com/
+# No source-wide licence: static/icons/icons.json gives each icon's licence and
+# author (the folder path repeats them). Icons missing from icons.json are skipped.
+license: per-icon
+fetch:
+  method: git
+  url: https://github.com/duerrsimon/bioicons.git
+  commit: d29e766ea7580b8063c4f47b29e872db40a4d979
+  paths: [static/icons, LICENSE, README.md]
+originalUrl: https://github.com/duerrsimon/bioicons/blob/{commit}/static/icons/{path}.svg
+# icons.json licence ids → SPDX. "bsd" is not specific; the three icons under it
+# (framework logos) are treated as BSD-3-Clause, the stricter common variant.
+licenseMap:
+  cc-0: CC0-1.0
+  cc-by-3.0: CC-BY-3.0
+  cc-by-4.0: CC-BY-4.0
+  cc-by-sa-3.0: CC-BY-SA-3.0
+  cc-by-sa-4.0: CC-BY-SA-4.0
+  mit: MIT
+  bsd: BSD-3-Clause
+termsChecked: 2026-10-08
+termsUrl: https://github.com/duerrsimon/bioicons#license
+notes: >-
+  README: "Please always cite the individual icons and their respective
+  license"; CC BY icons need the modifications stated. About half are Servier
+  Medical Art drawings (CC BY 3.0) vectorised for Bioicons. CC BY-SA icons go
+  in the share-alike set the app hides unless the user opts in.

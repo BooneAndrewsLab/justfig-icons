@@ -1,0 +1,152 @@
+# Controlled categories (plan §3). The app lists them in this order and opens
+# the first one, so the first category is part of the first payload budget
+# (manifest + first shard < 300 kB, checked by validate). `synonyms` feed the
+# search index: an icon in the category is also found by these words.
+categories:
+  - id: cells
+    title: Cells and tissues
+    synonyms: [cell, cellular, tissue, histology]
+  - id: organelles
+    title: Organelles and membranes
+    synonyms: [organelle, membrane, intracellular, subcellular, compartment]
+  - id: proteins
+    title: Proteins and molecules
+    synonyms: [protein, peptide, molecule, enzyme, amino acid]
+  - id: nucleic
+    title: DNA, RNA and genetics
+    synonyms: [dna, rna, gene, genetics, genome, nucleic acid, chromosome]
+  - id: immunology
+    title: Blood and immunology
+    synonyms: [blood, immune, immunology, antibody, haematology, hematology]
+  - id: microbes
+    title: Microbes and viruses
+    synonyms: [microbe, microbiology, bacteria, virus, pathogen, parasite, germ]
+  - id: lab
+    title: Lab equipment
+    synonyms: [lab, laboratory, equipment, apparatus, instrument, bench]
+  - id: organisms
+    title: Animals and model organisms
+    synonyms: [animal, organism, model organism, species]
+  - id: plants
+    title: Plants and algae
+    synonyms: [plant, botany, algae, leaf, flower]
+  - id: anatomy
+    title: Anatomy and physiology
+    synonyms: [anatomy, organ, body, physiology, human]
+  - id: medical
+    title: Medicine and health
+    synonyms: [medical, medicine, health, clinic, clinical, hospital, treatment, disease]
+  - id: chemistry
+    title: Chemistry
+    synonyms: [chemistry, chemical, compound, reaction]
+  - id: people
+    title: People
+    synonyms: [person, people, human, patient, doctor]
+  - id: data
+    title: Graphs and data
+    synonyms: [graph, chart, plot, data, statistics]
+  - id: computing
+    title: Computing and bioinformatics
+    synonyms: [computer, computing, software, bioinformatics, machine learning, server]
+  - id: symbols
+    title: Symbols and signs
+    synonyms: [symbol, sign, arrow, shape, icon, safety, warning, hazard]
+  - id: objects
+    title: Objects and places
+    synonyms: [object, item, place, building, thing]
+
+# Source category → taxonomy category. A source category missing here is a
+# build error, so a new upstream category is noticed.
+sourceCategories:
+  bioicons:
+    Cell_types: cells
+    Cell_lines: cells
+    Tissues: cells
+    Oncology: cells
+    Neuroscience: cells
+    Extracellular_matrix: cells
+    Intracellular_components: organelles
+    Cell_membrane: organelles
+    Receptors_channels: organelles
+    Amino-Acids: proteins
+    Peptides: proteins
+    Molecular_modelling: proteins
+    Nucleic_acids: nucleic
+    Genetics: nucleic
+    Genomics: nucleic
+    Epigenetics: nucleic
+    Molecular_Biology: nucleic
+    Blood_Immunology: immunology
+    Microbiology: microbes
+    Viruses: microbes
+    Parasites: microbes
+    Lab_apparatus: lab
+    Cell_culture: lab
+    Imaging: lab
+    Nanotechnology: lab
+    Animals: organisms
+    Plants_Algae: plants
+    Human_physiology: anatomy
+    Procedures: medical
+    Chemistry: chemistry
+    People-Other: people
+    Scientific_graphs: data
+    Machine_Learning: computing
+    Computer_hardware: computing
+    Chemo-_and_Bioinformatics: computing
+    Safety_symbols: symbols
+    General_items: objects
+  healthicons:
+    body: anatomy
+    blood: immunology
+    zoonoses: organisms
+    diagnostics: lab
+    devices: medical
+    conditions: medical
+    specialties: medical
+    contraceptives: medical
+    ppe: medical
+    medications: medical
+    people: people
+    emotions: people
+    exercise: people
+    graphs: data
+    symbols: symbols
+    typography: symbols
+    shapes: symbols
+    objects: objects
+    places: objects
+    nutrition: objects
+    vehicles: objects
+
+# Search synonym groups: a query for any word in a group also finds the others.
+synonyms:
+  - [microcentrifuge tube, eppendorf, microtube]
+  - [conical tube, falcon]
+  - [erythrocyte, red blood cell, rbc]
+  - [leukocyte, white blood cell, wbc]
+  - [lymphocyte, t cell, b cell]
+  - [macrophage, phagocyte]
+  - [neuron, nerve cell]
+  - [mitochondrion, mitochondria]
+  - [endoplasmic reticulum, er]
+  - [antibody, immunoglobulin, igg]
+  - [mouse, mice, murine, rodent]
+  - [rat, rodent]
+  - [zebrafish, danio]
+  - [fruit fly, drosophila]
+  - [yeast, saccharomyces]
+  - [worm, nematode, c elegans]
+  - [arabidopsis, thale cress]
+  - [bacterium, bacteria, prokaryote]
+  - [virus, virion, viral]
+  - [pipette, pipet]
+  - [petri dish, culture plate]
+  - [well plate, microplate, multiwell]
+  - [heart, cardiac]
+  - [kidney, renal]
+  - [liver, hepatic]
+  - [lung, pulmonary]
+  - [brain, cerebral, neural]
+  - [syringe, injection]
+  - [pill, tablet, drug, medication]
