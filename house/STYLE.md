@@ -44,7 +44,7 @@ Slot defaults come from Okabe-Ito and their tints, so the defaults are colourbli
 
 ## No trademark logos
 
-Never draw or contribute software, company or product logos (PyTorch, Jupyter, NVIDIA and
+Never draw or contribute software, company or product logos (PyTorch, Jupyter, NVIDIA, Excel, FHIR, DHIS2 and
 the like). Their trademark policies forbid altering the mark, and recolouring is JustFig's
 core feature. Generic artwork (a laptop, a sequencer, a GPU chip) is fine. The validator
 rejects titles and ids that name the brands already excluded.

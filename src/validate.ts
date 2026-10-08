@@ -113,9 +113,9 @@ export function checkSvg(svg: string, entry: Pick<IconEntry, 'slots' | 'recolor'
   return [...new Set(out)];
 }
 
-/** Brand names of the logos excluded as trademarks (overrides/bioicons/trademark-logos.yaml). */
+/** Brand names of the logos excluded as trademarks (the trademark-logos.yaml overrides). */
 export const TRADEMARK_NAMES =
-  /\b(pytorch|tensorflow|jupyter|keras|python|nvidia|colab|galaxy|gromacs|openmm|julia|rust|nf-core|pubchem|geo logo)\b/i;
+  /\b(pytorch|tensorflow|jupyter|keras|python|nvidia|colab|galaxy|gromacs|openmm|julia|rust|nf-core|pubchem|geo logo|excel|fhir\d*|hl7(?:v\d)?|dhis\d*|openmrs|simple logo|simple\.org)\b/i;
 
 export function validateDist(dist: string, licenses: LicenseTable): ValidationResult {
   const errors: string[] = [];

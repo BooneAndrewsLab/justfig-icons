@@ -1,0 +1,22 @@
+# Software and health-IT product logos: their artwork licence does not grant trademark
+# rights, and recolouring alters the mark. See CONTRIBUTING.md (no trademark logos).
+# Health Icons ships only filled variants, so each logo has exactly one icon.
+overrides:
+  - id: hi-excel-logo
+    exclude: true
+    reason: trademark logo
+  - id: hi-fhir-logo
+    exclude: true
+    reason: trademark logo
+  - id: hi-hl7v2-logo
+    exclude: true
+    reason: trademark logo
+  - id: hi-dhis2-logo
+    exclude: true
+    reason: trademark logo
+  - id: hi-openmrs-logo
+    exclude: true
+    reason: trademark logo
+  - id: hi-simple-logo
+    exclude: true
+    reason: trademark logo
