@@ -1,0 +1,51 @@
+# Software, company and product brand logos: their artwork licence does not grant trademark
+# rights, and recolouring alters the mark. See CONTRIBUTING.md (no trademark logos).
+overrides:
+  - id: bi-colab
+    exclude: true
+    reason: trademark logo
+  - id: bi-galaxy
+    exclude: true
+    reason: trademark logo
+  - id: bi-gromacs
+    exclude: true
+    reason: trademark logo
+  - id: bi-jupyter
+    exclude: true
+    reason: trademark logo
+  - id: bi-julia
+    exclude: true
+    reason: trademark logo
+  - id: bi-keras
+    exclude: true
+    reason: trademark logo
+  - id: bi-nf-core-logo-square
+    exclude: true
+    reason: trademark logo
+  - id: bi-nvidia-gpu
+    exclude: true
+    reason: trademark logo
+  - id: bi-openmm
+    exclude: true
+    reason: trademark logo
+  - id: bi-pubchem-logo
+    exclude: true
+    reason: trademark logo
+  - id: bi-python-logo-notext
+    exclude: true
+    reason: trademark logo
+  - id: bi-pytorch
+    exclude: true
+    reason: trademark logo
+  - id: bi-r
+    exclude: true
+    reason: trademark logo
+  - id: bi-rust
+    exclude: true
+    reason: trademark logo
+  - id: bi-tensorflow
+    exclude: true
+    reason: trademark logo
+  - id: bi-geo-logo
+    exclude: true
+    reason: trademark logo

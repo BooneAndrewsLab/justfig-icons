@@ -113,6 +113,10 @@ export function checkSvg(svg: string, entry: Pick<IconEntry, 'slots' | 'recolor'
   return [...new Set(out)];
 }
 
+/** Brand names of the logos excluded as trademarks (overrides/bioicons/trademark-logos.yaml). */
+export const TRADEMARK_NAMES =
+  /\b(pytorch|tensorflow|jupyter|keras|python|nvidia|colab|galaxy|gromacs|openmm|julia|rust|nf-core|pubchem|geo logo)\b/i;
+
 export function validateDist(dist: string, licenses: LicenseTable): ValidationResult {
   const errors: string[] = [];
   const licenseErrors: string[] = [];
@@ -151,6 +155,8 @@ export function validateDist(dist: string, licenses: LicenseTable): ValidationRe
       if (e.category !== cat.id) errors.push(`${at}: category ${e.category}`);
       if (e.title.trim() === '' || e.meta.title !== e.title) errors.push(`${at}: title`);
       if (e.meta.id !== e.id) errors.push(`${at}: meta.id`);
+      if (TRADEMARK_NAMES.test(e.title) || TRADEMARK_NAMES.test(e.id.replace(/-/g, ' ')))
+        errors.push(`${at}: looks like a trademark logo (not accepted, see CONTRIBUTING.md)`);
       if (e.meta.libraryVersion !== manifest.version) errors.push(`${at}: meta.libraryVersion`);
       // Licence metadata.
       const m = e.meta;

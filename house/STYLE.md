@@ -42,6 +42,13 @@ Slot defaults come from Okabe-Ito and their tints, so the defaults are colourbli
 - `author` and `license` default to the file's top-level values; a house icon is CC0-1.0 or
   CC-BY-4.0.
 
+## No trademark logos
+
+Never draw or contribute software, company or product logos (PyTorch, Jupyter, NVIDIA and
+the like). Their trademark policies forbid altering the mark, and recolouring is JustFig's
+core feature. Generic artwork (a laptop, a sequencer, a GPU chip) is fine. The validator
+rejects titles and ids that name the brands already excluded.
+
 ## Gate
 
 A contribution must pass `npm run validate:house` (and, in CI, the full `npm run build &&

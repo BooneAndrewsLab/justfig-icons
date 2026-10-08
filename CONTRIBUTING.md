@@ -187,6 +187,10 @@ A reviewer looks at the preview and at the licence statement before merging.
 5. Write a collector in `src/sources/<id>.ts` and register it in `src/build.ts`.
 6. `npm run fetch && npm run build && npm run validate`; review `REPORT.md` (rejections, counts).
 
+No trademark logos: do not add software, company or product brand logos, from any source or as
+a house icon. The artwork licence does not grant trademark rights and the marks may not be
+altered, which recolouring does. Exclude them with an override (`reason: trademark logo`).
+
 ## Fixing one icon
 
 Add an entry to `overrides/<source>/<anything>.yaml`:
