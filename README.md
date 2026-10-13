@@ -85,8 +85,8 @@ version 1); `src/format.ts` documents it.
 tarball and its SHA-256 to a GitHub Release. The app pins one release (URL + SHA-256 in its
 `icons.lock.json`) and unpacks it into `public/lib/<version>/` at deploy time.
 
-Releases are private GitHub Releases of `BooneAndrewsLab/justfig-icons`; the app's
-`npm run icons` downloads the pinned one with `JUSTFIG_ICONS_TOKEN` (a CI secret there), or
+Releases are public GitHub Releases of `BooneAndrewsLab/justfig-icons`; the app's
+`npm run icons` downloads the pinned one, or
 copies `../justfig-icons/dist` when it is built at the same version. To release: bump
 `version` in `package.json`, `npm run build && npm run validate`, commit, tag `v<version>`
 and push the tag; then copy the release's version, URL and `.sha256` into the app's
