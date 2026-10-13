@@ -7,7 +7,9 @@ people publish, so licences come first.
 
 This walks you from nothing to an open pull request. The example adds an icon called
 `test-flask`; use your own id wherever you see it. Only contribute work you drew yourself
-or have the right to license (CC0-1.0 or CC-BY-4.0).
+from scratch: not traced, copied or adapted from someone else's figure, icon or photograph
+(BioRender, Servier, textbooks, papers, websites). Opening the pull request states that it is
+your original work, released under CC0-1.0 or CC-BY-4.0.
 
 ### 1. Set up
 
@@ -190,6 +192,10 @@ A reviewer looks at the preview and at the licence statement before merging.
 No trademark logos: do not add software, company or product brand logos, from any source or as
 a house icon. The artwork licence does not grant trademark rights and the marks may not be
 altered, which recolouring does. Exclude them with an override (`reason: trademark logo`).
+
+No brand names in titles: artwork of a branded product (a Falcon tube, an Illumina sequencer)
+gets a generic title ("Conical tube 15 ml", "Benchtop sequencer"); the brand may stay a tag so
+search finds it. The validator rejects titles that name the brands in `BRAND_TITLES`.
 
 ## Fixing one icon
 

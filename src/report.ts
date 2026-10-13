@@ -48,6 +48,8 @@ export function creditsMarkdown(
     '',
     'When you use an icon, the figure’s credit line names its source, author and licence. ' +
       'CC BY and CC BY-SA icons must be credited, and a recoloured one is credited as “modified”. ' +
+      'An icon this library had to change from its original (a gradient flattened to one colour, ' +
+      'a stroke rescaled) is marked “modified” below and is always credited so. ' +
       'CC BY-SA icons are hidden unless you turn on share-alike icons: a figure that adapts one ' +
       'must be shared under the same licence. MIT and BSD icons carry their licence text, ' +
       'reproduced in the LICENSES folder of the library.',
@@ -65,7 +67,11 @@ export function creditsMarkdown(
       lines.push(`### ${info?.name ?? lic} (${String(ls.length)})`, '');
       if (info) lines.push(`Licence: ${info.url}`, '');
       for (const [author, as] of group(ls, (e) => e.meta.author ?? sourceName)) {
-        const titles = [...new Set(as.map((e) => e.title))].sort(byText).map(md);
+        const titles = [
+          ...new Set(as.map((e) => (e.meta.adapted ? `${e.title} (modified)` : e.title))),
+        ]
+          .sort(byText)
+          .map(md);
         lines.push(`- **${md(author)}** (${String(as.length)}): ${titles.join(', ')}`);
       }
       lines.push('');

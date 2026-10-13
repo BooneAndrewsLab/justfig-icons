@@ -90,4 +90,11 @@ describe('notices', () => {
     expect(md).toContain('- **Kathryn Kananen** (2): aorta, vein');
     expect(md.indexOf('## Bioicons')).toBeLessThan(md.indexOf('## Health Icons'));
   });
+
+  it('marks icons the normaliser adapted as modified in CREDITS.md', () => {
+    const e = entry('nucleus', 'Bioicons', 'Servier', 'CC-BY-3.0');
+    const adapted = { ...e, meta: { ...e.meta, adapted: true as const } };
+    const md = creditsMarkdown({ version: '1' } as LibraryManifest, [adapted], [], licenses);
+    expect(md).toContain('- **Servier** (1): nucleus (modified)');
+  });
 });

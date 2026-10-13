@@ -27,6 +27,12 @@ export interface IconMeta {
   readonly licenseUrl: string;
   readonly originalUrl: string;
   readonly shareAlike: boolean;
+  /**
+   * v1 extension: the normaliser changed how the artwork looks (a gradient flattened to its
+   * average colour, a stroke rescaled, an unknown element removed). CC BY and CC BY-SA credit
+   * such an icon as "modified".
+   */
+  readonly adapted?: true;
 }
 
 export interface IconEntry {

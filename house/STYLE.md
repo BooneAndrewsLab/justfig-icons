@@ -3,6 +3,13 @@
 House icons are drawn for JustFig and live in this repository (`house/svg/<id>.svg`, described
 in `house/meta.yaml`). They are the reference for what a recolourable icon looks like.
 
+## Original work
+
+Every house icon is drawn from scratch for JustFig from basic shapes on the grid below. None is
+traced, copied or adapted from third-party artwork (BioRender, Servier, Bioicons, textbooks,
+papers, photographs), which is what lets them be released under CC0-1.0. A contributed icon
+must be the same; see CONTRIBUTING.md.
+
 ## Grid and stroke
 
 - A 100 × 100 grid with a 4-unit safe margin.

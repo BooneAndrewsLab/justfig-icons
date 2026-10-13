@@ -218,6 +218,8 @@ export async function build(
     mkdirSync(join(out, d), { recursive: true });
 
   const warnings = new Map<string, number>();
+  // Normaliser notes that leave the artwork as drawn; any other note marks the icon adapted.
+  const COSMETIC_WARNINGS = new Set(['script removed']);
   const byHash = new Map<string, string>();
   const entries: IconEntry[] = [];
   const geometry = new Map<string, { svg: string; width: number; height: number }>();
@@ -262,6 +264,7 @@ export async function build(
         licenseUrl: lic.url,
         originalUrl: originalUrl(c.src, c.raw.key),
         shareAlike: lic.shareAlike,
+        ...(r.warnings.some((w) => !COSMETIC_WARNINGS.has(w)) ? { adapted: true as const } : {}),
       },
     });
   });

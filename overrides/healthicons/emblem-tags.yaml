@@ -1,0 +1,7 @@
+# The Red Cross emblem is protected by the Geneva Conventions whatever an artwork's licence.
+# These icons draw a plain grey cross, not the emblem, so they must not be found as one.
+overrides:
+  - id: hi-ambulance
+    tags: ['cross', 'emergency', 'siren', 'truck', 'ambulance']
+  - id: hi-mobile-clinic
+    tags: ['ambulance', 'cross', 'truck', 'mobile', 'clinic']

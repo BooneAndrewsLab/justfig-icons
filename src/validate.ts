@@ -117,6 +117,10 @@ export function checkSvg(svg: string, entry: Pick<IconEntry, 'slots' | 'recolor'
 export const TRADEMARK_NAMES =
   /\b(pytorch|tensorflow|jupyter|keras|python|nvidia|colab|galaxy|gromacs|openmm|julia|rust|nf-core|pubchem|geo logo|excel|fhir\d*|hl7(?:v\d)?|dhis\d*|openmrs|simple logo|simple\.org)\b/i;
 
+/** Product brands that name lab equipment: a title says what the icon is, the brand may be a tag. */
+export const BRAND_TITLES =
+  /\b(falcon|agilent|tecan|illumina|miseq|nextseq|novaseq|pacbio|nanopore|eppendorf|gilson|corning|thermo|biorad|bio-rad|nikon|zeiss|leica|olympus|qiagen|beckman|sartorius|biorender)\b/i;
+
 export function validateDist(dist: string, licenses: LicenseTable): ValidationResult {
   const errors: string[] = [];
   const licenseErrors: string[] = [];
@@ -157,6 +161,10 @@ export function validateDist(dist: string, licenses: LicenseTable): ValidationRe
       if (e.meta.id !== e.id) errors.push(`${at}: meta.id`);
       if (TRADEMARK_NAMES.test(e.title) || TRADEMARK_NAMES.test(e.id.replace(/-/g, ' ')))
         errors.push(`${at}: looks like a trademark logo (not accepted, see CONTRIBUTING.md)`);
+      if (BRAND_TITLES.test(e.title))
+        errors.push(
+          `${at}: title names a product brand (use a generic title, see CONTRIBUTING.md)`,
+        );
       if (e.meta.libraryVersion !== manifest.version) errors.push(`${at}: meta.libraryVersion`);
       // Licence metadata.
       const m = e.meta;

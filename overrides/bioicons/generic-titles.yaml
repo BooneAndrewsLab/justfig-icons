@@ -1,0 +1,40 @@
+# Product names as titles: the artwork is generic lab equipment, so the title says what it
+# is, not whose it is. The brand stays a search tag (it names the product, it is not a mark
+# on the icon). See CONTRIBUTING.md (brand names in titles).
+overrides:
+  - id: bi-50-falcon
+    title: 'Conical tube 50 ml'
+    tags: ['conical tube', 'falcon', '50 ml', 'cell', 'culture']
+  - id: bi-falcon-15
+    title: 'Conical tube 15 ml'
+    tags: ['conical tube', 'falcon', '15 ml', 'lab', 'apparatus']
+  - id: bi-falcon-15-empty
+    title: 'Conical tube 15 ml empty'
+    tags: ['conical tube', 'falcon', '15 ml', 'empty', 'lab', 'apparatus']
+  - id: bi-falcon-50-media
+    title: 'Conical tube 50 ml with medium'
+    tags: ['conical tube', 'falcon', '50 ml', 'media', 'cell', 'culture']
+  - id: bi-falcon-15ml-empty
+    title: 'Conical tube 15 ml empty'
+    tags: ['conical tube', 'falcon', '15 ml', 'empty', 'microbiology']
+  - id: bi-falcon-15ml-pink
+    title: 'Conical tube 15 ml pink'
+    tags: ['conical tube', 'falcon', '15 ml', 'pink', 'microbiology']
+  - id: bi-falcon-50ml-empty
+    title: 'Conical tube 50 ml empty'
+    tags: ['conical tube', 'falcon', '50 ml', 'empty', 'microbiology']
+  - id: bi-falcon-50ml-pink
+    title: 'Conical tube 50 ml pink'
+    tags: ['conical tube', 'falcon', '50 ml', 'pink', 'microbiology']
+  - id: bi-agilent-hplc
+    title: 'HPLC system'
+    tags: ['hplc', 'chromatography', 'agilent', 'lab', 'apparatus']
+  - id: bi-illumina-miseq
+    title: 'Benchtop sequencer'
+    tags: ['sequencer', 'ngs', 'short read', 'illumina', 'miseq', 'lab', 'apparatus']
+  - id: bi-tecan-plate-reader
+    title: 'Plate reader'
+    tags: ['plate reader', 'microplate', 'tecan', 'lab', 'apparatus']
+  - id: bi-pacbiosequencer
+    title: 'Long-read sequencer'
+    tags: ['sequencer', 'long read', 'pacbio', 'microbiology']
